@@ -1,0 +1,88 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    min-height: 300px;
+    border-radius: 15px;
+    padding: 30px 60px;
+    box-shadow: 0px 4px 20px rgba(53, 99, 55, 0.2);
+    margin: 0 30px;
+    .header {
+        font-family: "Cabin", sans-serif;
+        font-weight: 700;
+        font-optical-sizing: auto;
+        font-size: 26px;
+        text-align: center;
+        color: #2a2a2a;
+    }
+    input[type=search],
+    input[type=email],
+    input[type=password],
+    input[type=text],
+    input[type=tel],
+    input[type=number],
+    input[type=time],
+    input[type=date],
+    textarea,
+    select {
+        border: 1px solid #BEBEBE;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-size: 14px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 45px;
+        color: #2A2A2A;
+        &::placeholder { 
+            color: #BEBEBE;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        &:focus { 
+            outline: none;
+            border: 1px solid #23AAAA;
+        }
+        &:disabled {
+            background-color: #F4F5F6;
+            border-color: #F4F5F6;
+            color: #808080;
+        }
+    }
+    textarea {
+        min-height: 110px;
+        resize: vertical;
+        text-align: left;
+    }
+    .input-error {
+        margin: 0;
+        height: 10px;
+        font-size: 10px;
+        color: red;
+        font-weight: 500;
+    }
+    button {
+        border: none;
+        background-color: #ee2d68;
+        width: 100%;
+        color: white;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;                                       
+        height: 45px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 5px;
+        padding: 0 15px;
+        transition: .3s ease-in-out;
+        &:hover {
+            background: #fe1a5f;
+        }
+    }
+}

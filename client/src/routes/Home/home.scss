@@ -1,0 +1,28 @@
+.home-container {
+    height: 70vh;
+    animation: fadein 1s;
+    padding: 100px 160px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .home-container {
+        padding: 50px 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .home-container {
+        padding: 50px 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .home-container {
+        padding: 100px 160px;
+    }
+}
