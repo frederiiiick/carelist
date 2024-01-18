@@ -39,6 +39,12 @@
             font-size: 18px;
             color: white;
         }
+        > svg {
+            cursor: pointer;
+            &:hover {
+                opacity: .85;
+            }
+        }
     }
     .card-body {
         font-family: "Montserrat", sans-serif;

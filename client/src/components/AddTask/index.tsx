@@ -45,9 +45,9 @@ const AddTask = ({ getTasks } : any) => {
             let isValid: boolean = true;
             if (!note) {
                 isValid = false;
-                inputChange({ setForm: setForm, key: 'Note', value: 'error', data: 'Note cannot be blank' })
+                inputChange({ setForm: setForm, key: 'note', value: 'error', data: 'Note cannot be blank' })
             } else {
-                inputChange({ setForm: setForm, key: 'Note', value: 'error', data: '' })
+                inputChange({ setForm: setForm, key: 'note', value: 'error', data: '' })
             }
             if (isValid) {
                 try {
@@ -73,6 +73,7 @@ const AddTask = ({ getTasks } : any) => {
                 <FormContainer>
                     <p className="header">New Task</p>
                     <textarea placeholder='Write something. . .' onChange={(event: React.FormEvent<HTMLTextAreaElement>): void => onChangeInput({ event, type: "note"})}></textarea>
+                    <p className="input-error">{form.note.error}</p>
                     <Seprator height={20} />
                     <button onClick={() => onTaskAdd({ note: form.note.value, userId: user.id})}>Add Task</button>
                 </FormContainer>

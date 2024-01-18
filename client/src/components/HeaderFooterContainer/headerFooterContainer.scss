@@ -11,6 +11,7 @@
         align-items: center;
         .logo {
             height: 40px;
+            object-fit: contain;
         }
         .login-user {
             cursor: pointer;
@@ -78,6 +79,18 @@
                 background-color: #ffc533;
                 border: 2px solid #ffc533;
             }
+        }
+    }
+    .footer {
+        height: 220px;
+        background-color: #23AAAA;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > img {
+            height: 150px;
+            object-fit: contain;
         }
     }
     @keyframes slidedown-user-nav {

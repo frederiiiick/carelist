@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import "./header.scss";
+import "./headerFooterContainer.scss";
 import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../Redux/hooks";
 import actions from "../../Redux/Actions";
@@ -36,7 +36,9 @@ const HeaderFooterContainer = () => {
                 }
             </div>
             <Outlet />
-            <div className="footer"></div>
+            <div className="footer">
+                <img src="https://c2zyebdn.cloudimg.io/s/cdn/x/https://divin2sy6ce0b.cloudfront.net/images/carelulu_logo_square_white.png" alt="CareLuLu" />
+            </div>
         </div>
     )
 }
