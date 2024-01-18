@@ -1,8 +1,7 @@
 import authActions from "./auth";
 
 const actions = {
-    auth: authActions,
-}
-
+  auth: authActions,
+};
 
 export default actions;
